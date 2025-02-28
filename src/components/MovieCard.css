@@ -1,29 +1,38 @@
-/* src/components/MovieCard.css */
-
 .movie-card {
-  display: flex;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 250, 240, 0.9); /* Soft warm beige with transparency */
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  transition: transform 0.3s ease-in-out;
 }
 
-.movie-poster {
-  width: 150px;
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
   object-fit: cover;
 }
 
-.movie-details {
-  padding: 16px;
-  flex: 1;
+.movie-card h3 {
+  color: #5A3E2B;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
-.movie-title {
-  margin: 0 0 8px 0;
+.movie-card p {
+  font-size: 0.95rem;
+  color: #6D4C41;
 }
 
-.movie-synopsis {
-  margin-top: 12px;
-  color: #555;
+.movie-card p strong {
+  color: #A67B5B;
 }

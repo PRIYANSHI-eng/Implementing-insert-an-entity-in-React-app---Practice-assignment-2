@@ -1,31 +1,42 @@
-/* src/components/Dashboard.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Montserrat:wght@300;600&display=swap');
 
 .dashboard {
-  padding: 20px;
+    text-align: center;
+    padding: 40px;
+    background: url('https://source.unsplash.com/1600x900/?floral,vintage,cottagecore') no-repeat center center/cover;
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
 }
 
-.dashboard-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+.dashboard h1 {
+    font-size: 3rem;
+    color: #836551; /* Warm brown */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.add-movie-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.add-movie-btn {
+    background: linear-gradient(45deg, #A67B5B, #EED3C3);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.add-movie-button:hover {
-  background-color: #0056b3;
+.add-movie-btn:hover {
+    background: linear-gradient(45deg, #7A5740, #C9A796);
+    transform: scale(1.05);
 }
 
 .movie-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
